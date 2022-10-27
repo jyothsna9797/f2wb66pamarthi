@@ -6,3 +6,8 @@ body {
 a {
   color: #00B7FF;
 }
+h1 {
+  font-family: Copperplate, Papyrus, fantasy;
+  font-size: 88px;
+  text-shadow: 5px 4px 5px #aaa;
+}
