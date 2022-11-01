@@ -6,6 +6,16 @@ block content
 
   button(type="button", class="btn btn-info") Press Me
   
-  div(id="bump") 
+  div(id="bump", class="description") 
     br
     |Bump the count
+
+  script.
+    const count = 0;
+    const bump = 1;
+    function doBump() {
+      count += bump;
+      bump+=1;
+      div.description "Count" count "with bump" bump;
+    }
+
