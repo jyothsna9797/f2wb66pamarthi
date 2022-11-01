@@ -6,5 +6,5 @@ link to Render remote server: https://f2wb66pamarthi.onrender.com
 
 <br>
 
-Class Name: Vehicle <br>
-Attributes: vehicle_name(string), vehicle_type(string), seating_capacity(number), price(number),  vehicle_model(number), miles_driven(number)
+Class Name: Pastry <br>
+Attributes: pastry_flavour(string), calories(number), pastry_shape(string)
