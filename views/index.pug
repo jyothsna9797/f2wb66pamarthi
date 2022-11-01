@@ -11,11 +11,12 @@ block content
     |Bump the count
 
   script.
-    const count = 0;
-    const bump = 1;
+    var count = 0;
+    var bump = 1;
     function doBump() {
       count += bump;
-      bump+=1;
-      div Count #{count} with bump #{bump};
+      bump+=1; 
     }
+    console.log(count);
+    div `Count #{count} with bump #{bump}`
 
