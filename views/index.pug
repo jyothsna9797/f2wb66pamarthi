@@ -16,8 +16,10 @@ block content
     function doBump() {
       count += bump;
       bump+=1; 
-      console.log(count);
-      div `Count #{count} with bump #{bump}`
+      var result = `Count #{count} with bump #{bump}`;
+      console.log(result);
+      div= result;
+      //div `Count #{count} with bump #{bump}`
     }
    
 
