@@ -8,7 +8,7 @@ block content
   
   div(id="bump", class="description") 
     br
-    |#{Bump the count}
+    |Bump the count #{result}
 
   script.
     var count = 0;
@@ -16,8 +16,8 @@ block content
     function doBump() {
       count += bump;
       bump+=1; 
-      var Bump the count = "Count "+ count + "with bump " + bump;
-      console.log(Bump the count);
+      var result = "Count "+ count + "with bump " + bump;
+      console.log(result);
     }
    
 
