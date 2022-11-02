@@ -14,11 +14,9 @@ block content
         p Columns values should be in range of 1 to 10.
   - }
   - else {
-        br
         table#outer
         - for(let i=0; i<rows; i++) {
             tr#middle
-                br
                 - for(let j=0; j < cols; j++) {
                     td= (1+ i + j*rows)
                 -}
