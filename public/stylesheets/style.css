@@ -16,3 +16,11 @@ p {
   font-size: 28px; 
   color: green;
 }
+table, td {
+  border: 1px solid;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
