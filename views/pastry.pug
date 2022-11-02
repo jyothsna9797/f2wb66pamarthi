@@ -5,9 +5,14 @@ block content
   - var results = [{"pastry_flavour": "Red velvet", "calories": 10, "pastry_shape": "circle"},  {"pastry_flavour": "Choclate", "calories": 23.4, "pastry_shape": "Rectangle"}, {"pastry_flavour": "Strawberry", "calories": 23, "pastry_shape": "Square"}];
   div(class="container-fluid")
     div(class="row")
-        each items in results
-            div.col-sm-2 pastry_flavour: #{items["pastry_flavour"]}  
-            div.col-sm-2 calories:  #{items["calories"]} 
-            div.col-sm-2 pastry_shape:  #{items["pastry_shape"]}
+        each items, index in results
+            div(class= "col-sm-2" onClick=`buy(${index})`) pastry_flavour: #{items["pastry_flavour"]}  <br>
+              calories:  #{items["calories"]} <br>
+              pastry_shape:  #{items["pastry_shape"]}
+  
+  script. 
+    function buy(index) {
+        alert("You purchased item " + index + ".")
+    }
  
   
