@@ -6,9 +6,7 @@ block content
   div(class="container-fluid")
     div(class="row")
         each items, index in results
-            div(class= "col-sm-2" onClick=`buy(${index})`) pastry_flavour: #{items["pastry_flavour"]}  <br>
-              calories:  #{items["calories"]} <br>
-              pastry_shape:  #{items["pastry_shape"]}
+            div(class= "col-sm-2" onClick=`buy(${index})`) pastry_flavour: #{items["pastry_flavour"]}  calories:  #{items["calories"]} pastry_shape:  #{items["pastry_shape"]}
   
   script. 
     function buy(index) {
