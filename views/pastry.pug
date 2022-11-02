@@ -3,10 +3,10 @@ extends layout
 block content
   h1= title
   - var results = [{"pastry_flavour": "Red velvet", "calories": 10, "pastry_shape": "circle"},  {"pastry_flavour": "Choclate", "calories": 23.4, "pastry_shape": "Rectangle"}, {"pastry_flavour": "Strawberry", "calories": 23, "pastry_shape": "Square"}];
-  div.container-fluid
-    div.row
+  div(class="container-fluid")
+    div(class="row")
         each items in results
-            div.col-sm-2 pastry: #{items["pastry_flavour"]}  <br>
+            div.col-sm-2 pastry_flavour: #{items["pastry_flavour"]}  <br>
             div.col-sm-2 calories:  #{items["pastry_flavour"]} <br>
             div.col-sm-2 pastry_shape:  #{items["pastry_shape"]}
  
